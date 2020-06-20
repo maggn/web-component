@@ -11,7 +11,7 @@ customElements.define("nav-first", NavFirst);
 
 class NavSecond extends ActShadowElement {
     connectedCallback() {
-        let online = 'https://admin.pqs-mobile.de/resources/master';
+        let online = 'https://xxxxxx.de/resources/master';
         let offline = 'test.json'; 
 
         fetch(offline,
