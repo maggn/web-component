@@ -1,0 +1,45 @@
+body {
+    margin:0;
+    background-color: white;
+
+    height: 100vh;
+    display: grid;
+
+    grid-template-rows: 80px 1fr 30px;
+    grid-template-columns: 220px 1fr;
+
+    grid-template-areas: 
+    "logo header"
+    "nav main"
+    "nav footer";
+}
+
+logo {
+  margin: 0;
+  grid-area: logo;
+  background-color: antiquewhite;
+}
+
+header {
+    margin: 0;
+    grid-area: header;
+    background-color: #8ca0ff;
+  }
+  
+nav {
+    margin: 0;
+    grid-area: nav;
+    background-color: #ffa08c;
+  }
+  
+main {
+    margin: 0;
+    grid-area: main;
+    background-color: #ffff64;
+  }
+  
+footer {
+    margin: 0;
+    grid-area: footer;
+    background-color: #8cffa0;
+  }

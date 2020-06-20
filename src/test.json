@@ -1,0 +1,77 @@
+{
+    "_links": {
+        "security": [
+            {
+                "href": "/resources/security/accesstoken",
+                "resetpwd": "/resources/security/reset_expired_pasword",
+                "webauthn_authentication_start": "/resources/security/webauthn/authentication/start",
+                "webauthn_authentication_finish": "/resources/security/webauthn/authentication/finish"
+            }
+        ],
+        "user": [
+            {
+                "href": "/resources/user"
+            }
+        ],
+        "room": [
+            {
+                "item": "/resources/rooms/room/{id}",
+                "status": "/resources/rooms/room/{id}/status",
+                "mute_list": "/resources/rooms/room/{id}/mute",
+                "mutevideo_list": "/resources/rooms/room/{id}/mutevideo"
+            }
+        ],
+        "file": [
+            {
+                "item": "/resources/rooms/file/{id}",
+                "byRoom": "/resources/rooms/file/byRoom/{id}"
+            }
+        ],
+        "benutzer": [
+            {
+                "register": "/resources/rooms/benutzer/register"
+            }
+        ],
+        "participants": [
+            {
+                "afk": "/resources/rooms/participant/afk"
+            }
+        ],
+        "tenant_config": [
+            {
+                "single": "/resources/rooms/tenant_config/single",
+                "logo": "/resources/rooms/tenant_config/logo"
+            }
+        ],
+        "account": [
+            {
+                "password_recovery": "/resources/jaas/account/password_recovery/{id}",
+                "password_recovery_tenant": "/resources/jaas/account/password_recovery/{id}/{tenant}"
+            }
+        ],
+        "client": [
+            {
+                "items": "/resources/jaas/client/defsort"
+            }
+        ]
+    },
+    "_embedded": {
+        "stammdaten": [
+            {
+                "canEdit": false,
+                "id": "1962520632",
+                "group": "GRP_BENUTZER",
+                "name": "Anrede",
+                "items": "/resources/rooms/anrede/defsort"
+            },
+            {
+                "canEdit": false,
+                "id": "1962520632",
+                "group": "GRP_WEBRTC",
+                "name": "Anrede",
+                "items": "/resources/rooms/anrede/defsort"
+            }
+        ],
+        "tenantid": ""
+    }
+}
